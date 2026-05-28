@@ -1,0 +1,181 @@
+.admin-dashboard {
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+.search-input {
+  margin: 20px 0;
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #7f8c8d;
+}
+
+.product-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-btn, .cancel-btn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #c0392b;
+}
+
+.product-list-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+td .product-name {
+  min-width: 190px;
+}
+
+td .product-details {
+  min-width: 350px;
+}
+
+td .td-price {
+  min-width: 105px;
+}
+
+thead {
+  background: var(--gradient);
+}
+
+th {
+  background-color: transparent;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+thead tr:hover {
+  background: var(--gradient) !important;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 8px;
+  min-height: 100px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 14px;
+  width: max-content;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

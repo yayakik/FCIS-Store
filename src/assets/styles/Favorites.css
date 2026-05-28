@@ -1,0 +1,146 @@
+/* Container styles */
+.favorites-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.favorites-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--gradient);
+}
+
+.favorites-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.empty-favorites-message {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+/* List styles */
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+/* Card styles */
+.favorite-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    transition: all 0.15s ease;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.favorite-item-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.favorite-item:hover {
+    box-shadow: 0 6px 24px rgba(25, 118, 210, 0.13);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.favorite-item .favorite-item-details {
+    text-align: start;
+}
+
+.favorite-item img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.favorite-item h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 8px 0 6px 0;
+    color: #222;
+}
+
+.favorite-item p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+
+/* Button styles */
+
+
+.favorite-item .MuiButton-root {
+    margin: 4px 0;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.favorite-item .MuiButton-containedPrimary {
+    margin-top: 6px;
+}
+
+.clear-favorites-btn {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 8px !important;
+    padding: 8px 32px !important;
+}
+
+.favorite-actions {
+    max-width: 150px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .favorites-container {
+        padding: 16px 4px;
+    }
+
+    .favorites-list {
+        gap: 16px;
+    }
+
+    .favorite-item {
+        width: 95vw;
+        max-width: 340px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .favorites-container {
+        max-width: 95%;
+    }
+}

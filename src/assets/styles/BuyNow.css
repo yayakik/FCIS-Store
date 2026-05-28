@@ -1,0 +1,37 @@
+.buy-now-container {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.payment-methods {
+	margin-bottom: 20px;
+}
+
+	.payment-methods label {
+		display: block;
+		margin: 8px 0;
+		font-size: 16px;
+	}
+
+.summary p, .summary h3 {
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+.confirm-btn {
+	background-color: #1890ff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+	.confirm-btn:hover {
+		background-color: #096dd9;
+	}

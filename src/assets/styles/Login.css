@@ -1,0 +1,148 @@
+/* Reset CSS (ممكن تستخدم Normalize.css) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* CSS Variables */
+  --bg-color: #f4f4f4;
+  --card-bg: #fff;
+  --text-color: #333;
+  --text-color-light: #555;
+  --text-color-lighter: #777;
+  --border-radius: 4px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --transition-duration: 0.3s;
+  --success-color: #4caf50;
+  --error-color: #f44336;
+}
+
+body {
+  font-family: sans-serif;
+  /* أو أي خط تفضله */
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/* Login Box */
+.login-box {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  /* استخدم rem للتحكم الأفضل في الأحجام */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: min(90%, 350px);
+  /* استخدم min عشان يبقى متجاوب */
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text-color-light);
+  font-weight: bold;
+}
+
+.form-group input[type='email'],
+.form-group input[type='password'] {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  box-sizing: border-box;
+}
+
+/* Login Button */
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: background-color var(--transition-duration) ease;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+/* Options */
+.options {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color-lighter);
+  font-size: var(--font-size-small);
+}
+
+.options a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Message */
+.message {
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  font-size: var(--font-size-base);
+  text-align: center;
+  color: white !important;
+
+
+}
+
+.success-message {
+  background-color: var(--success-color);
+  color: white !important;
+}
+
+.error-message {
+  background-color: var(--error-color);
+  color: white;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

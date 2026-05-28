@@ -1,0 +1,74 @@
+
+.contact-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    .contact-container h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .contact-container form div {
+        margin-bottom: 1rem;
+    }
+
+    .contact-container label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #222;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 3px #007bff;
+        }
+
+    .contact-container button {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+    }
+
+        .contact-container button:hover {
+            background-color: #0056b3;
+        }
+
+    .contact-container p.error {
+        color: red;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+    }
+
+    .contact-container p.success {
+        color: green;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
